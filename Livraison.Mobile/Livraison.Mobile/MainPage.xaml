@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Livraison.Mobile.MainPage">
+
+
+    
+
+    <ScrollView Orientation="Vertical">
+        <NavigationPage.TitleView>
+            <StackLayout  Orientation="Horizontal"
+                      Spacing="10"
+                      Margin="10">
+                <Label Text="LivraisonShop"
+                           FontSize="35"
+                           FontAttributes="Bold"
+                           FontFamily="MyAwesomeCustomFont"
+                           LineBreakMode="TailTruncation"
+                           VerticalOptions="Center"
+                           TextColor="Gold"
+                           HorizontalOptions="StartAndExpand"/>
+                
+
+
+            </StackLayout>
+        </NavigationPage.TitleView>
+        <StackLayout>
+            <Frame>
+                <Label Text="LivraisonEshop" TextColor="Gray" FontSize="Medium" FontAttributes="Bold"/>
+                
+            </Frame>
+
+            <Frame CornerRadius="20" BackgroundColor="Gray" >
+                <StackLayout>
+                    <Label Text="PD01" HorizontalTextAlignment="Center" TextTransform="Uppercase" TextDecorations="Underline" FontSize="Body" FontAttributes="Bold"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="bafoussam" FontSize="Default" FontAttributes="Bold"/>
+                        <Label Text="20 novembre 2022 10h" HorizontalOptions="EndAndExpand" FontAttributes="Italic" FontSize="Caption"/>
+                    </StackLayout>
+                    <Button x:Name="btn1"  Text="commander" Clicked="btn1_Clicked"/>
+                </StackLayout>
+            </Frame>
+            <Frame CornerRadius="20" BackgroundColor="Gray">
+                <StackLayout>
+                    <Label Text="PD02" HorizontalTextAlignment="Center" TextTransform="Uppercase" TextDecorations="Underline" FontSize="Body" FontAttributes="Bold"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="yaounde" FontSize="Default" FontAttributes="Bold"/>
+                        <Label Text="20 novembre 2022 10h" HorizontalOptions="EndAndExpand" FontAttributes="Italic" FontSize="Caption"/>
+                       
+                    </StackLayout>
+                    <Button x:Name="btn2"  Text="commander" Clicked="btn2_Clicked"/>
+                </StackLayout>
+            </Frame>
+            <Frame CornerRadius="20" BackgroundColor="Gray">
+                <StackLayout>
+                    <Label Text="PD03" HorizontalTextAlignment="Center" TextTransform="Uppercase" TextDecorations="Underline" FontSize="Body" FontAttributes="Bold"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="douala" FontSize="Default" FontAttributes="Bold"/>
+                        <Label Text="21 novembre 2022 10h" HorizontalOptions="EndAndExpand" FontAttributes="Italic" FontSize="Caption"/>
+                    </StackLayout>
+                    <Button x:Name="btn3"  Text="commander" Clicked="btn3_Clicked"/>
+                </StackLayout>
+
+            </Frame>
+            <Frame CornerRadius="20" BackgroundColor="Gray">
+                <StackLayout>
+                    <Label Text="PD04" HorizontalTextAlignment="Center" TextTransform="Uppercase" TextDecorations="Underline" FontSize="Body" FontAttributes="Bold"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="bafoussam" FontSize="Default" FontAttributes="Bold"/>
+                        <Label Text="24 novembre 2022 18h" HorizontalOptions="EndAndExpand" FontAttributes="Italic" FontSize="Caption"/>
+                    </StackLayout>
+                    <Button x:Name="btn4"  Text="commander" Clicked="btn4_Clicked"/>
+                </StackLayout>
+
+            </Frame>
+            <Frame CornerRadius="20" BackgroundColor="Gray">
+                <StackLayout>
+                    <Label Text="PD05" HorizontalTextAlignment="Center" TextTransform="Uppercase" TextDecorations="Underline" FontSize="Body" FontAttributes="Bold"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="brazaville" FontSize="Default" FontAttributes="Bold"/>
+                        <Label Text="24 novembre 2022 18h" HorizontalOptions="EndAndExpand" FontAttributes="Italic" FontSize="Caption"/>
+                    </StackLayout>
+                    <Button x:Name="btn5"  Text="commander" Clicked="btn5_Clicked"/>
+                </StackLayout>
+
+            </Frame>
+            <Frame CornerRadius="20" BackgroundColor="Gray">
+                <StackLayout>
+                    <Label Text="PD06" HorizontalTextAlignment="Center" TextTransform="Uppercase" TextDecorations="Underline" FontSize="Body" FontAttributes="Bold"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="brazaville" FontSize="Default" FontAttributes="Bold"/>
+                        <Label Text="24 novembre 2022 18h" HorizontalOptions="EndAndExpand" FontAttributes="Italic" FontSize="Caption"/>
+                    </StackLayout>
+                    <Button x:Name="btn6"  Text="commander" Clicked="btn6_Clicked"/>
+                </StackLayout>
+
+            </Frame>
+            <Frame CornerRadius="20" BackgroundColor="Gray">
+                <StackLayout>
+                    <Label Text="PD07" HorizontalTextAlignment="Center" TextTransform="Uppercase" TextDecorations="Underline" FontSize="Body" FontAttributes="Bold"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="bafoussam" FontSize="Default" FontAttributes="Bold"/>
+                        <Label Text="date et heure" HorizontalOptions="EndAndExpand" FontAttributes="Italic" FontSize="Caption"/>
+                    </StackLayout>
+                </StackLayout>
+
+            </Frame>
+            <Frame CornerRadius="20" BackgroundColor="Gray">
+                <StackLayout>
+                    <Label Text="PD08" HorizontalTextAlignment="Center" TextTransform="Uppercase" TextDecorations="Underline" FontSize="Body" FontAttributes="Bold"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="bafoussam" FontSize="Default" FontAttributes="Bold"/>
+                        <Label Text="date et heure" HorizontalOptions="EndAndExpand" FontAttributes="Italic" FontSize="Caption"/>
+                    </StackLayout>
+                </StackLayout>
+
+            </Frame>
+            <Frame CornerRadius="2" BackgroundColor="Gray">
+                <StackLayout>
+                    <Label Text="PD09" HorizontalTextAlignment="Center" TextTransform="Uppercase" TextDecorations="Underline" FontSize="Body" FontAttributes="Bold"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="bafoussam" FontSize="Default" FontAttributes="Bold"/>
+                        <Label Text="date et heure" HorizontalOptions="EndAndExpand" FontAttributes="Italic" FontSize="Caption"/>
+                    </StackLayout>
+                </StackLayout>
+
+            </Frame>
+        </StackLayout>
+        
+    </ScrollView>
+    
+
+
+
+
+</ContentPage>
