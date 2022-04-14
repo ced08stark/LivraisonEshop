@@ -56,7 +56,7 @@ namespace Livraison.Mobile
 
         private void btn2_Clicked(object sender, EventArgs e)
         {
-            CurrentCommandModel = new CommandeModel("PD02", DateTime.Now.ToLongDateString(), "bafoussam", "tomas", "6599388949");
+            CurrentCommandModel = new CommandeModel("PD02", DateTime.Now.ToLongDateString(), "yaounde", "henris", "6599388949");
             Navigation.PushModalAsync(new CommandPage());
         }
 

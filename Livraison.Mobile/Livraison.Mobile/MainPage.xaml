@@ -111,7 +111,7 @@
                     <Label Text="PD08" HorizontalTextAlignment="Center" TextTransform="Uppercase" TextDecorations="Underline" FontSize="Body" FontAttributes="Bold"/>
                     <StackLayout Orientation="Horizontal">
                         <Label Text="bafoussam" FontSize="Default" FontAttributes="Bold"/>
-                        <Label Text="date et heure" HorizontalOptions="EndAndExpand" FontAttributes="Italic" FontSize="Caption"/>
+                        <Label Text="24 novembre 2022 18h" HorizontalOptions="EndAndExpand" FontAttributes="Italic" FontSize="Caption"/>
                         
                     </StackLayout>
                     <Button x:Name="btn8"  Text="commander" Clicked="btn8_Clicked"/>
@@ -123,7 +123,7 @@
                     <Label Text="PD09" HorizontalTextAlignment="Center" TextTransform="Uppercase" TextDecorations="Underline" FontSize="Body" FontAttributes="Bold"/>
                     <StackLayout Orientation="Horizontal">
                         <Label Text="bafoussam" FontSize="Default" FontAttributes="Bold"/>
-                        <Label Text="date et heure" HorizontalOptions="EndAndExpand" FontAttributes="Italic" FontSize="Caption"/>
+                        <Label Text="24 novembre 2022 18h" HorizontalOptions="EndAndExpand" FontAttributes="Italic" FontSize="Caption"/>
                     </StackLayout>
                     <Button x:Name="btn9"  Text="commander" Clicked="btn9_Clicked"/>
                 </StackLayout>
