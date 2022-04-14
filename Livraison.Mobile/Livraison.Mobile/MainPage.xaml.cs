@@ -32,7 +32,7 @@ namespace Livraison.Mobile
             new LivraisonModel("PD10", DateTime.Now.ToLongDateString(), "Libreville")
         };
 
-        public List<CommandeModel> listCommande = new List<CommandeModel>()
+        public static List<CommandeModel> listCommande = new List<CommandeModel>()
         {
             new CommandeModel("PD01", DateTime.Now.ToLongDateString(), "bafoussam", "tomas", "6599388949"),
             new CommandeModel("PD02", DateTime.Now.ToLongDateString(), "yaounde", "henris", "6599388949"),

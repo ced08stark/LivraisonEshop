@@ -23,6 +23,11 @@ namespace Livraison.Mobile
             lieu.Text = MainPage.CurrentCommandModel.Lieu;
         }
 
+        private void end_Clicked(object sender, EventArgs e)
+        {
+            MainPage.listCommande.Remove(MainPage.CurrentCommandModel);
+            Navigation.PushModalAsync(new MainPage());
 
+        }
     }
 }
