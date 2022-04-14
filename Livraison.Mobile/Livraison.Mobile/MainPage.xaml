@@ -102,6 +102,7 @@
                         <Label Text="bafoussam" FontSize="Default" FontAttributes="Bold"/>
                         <Label Text="date et heure" HorizontalOptions="EndAndExpand" FontAttributes="Italic" FontSize="Caption"/>
                     </StackLayout>
+                    <Button x:Name="btn7"  Text="commander" Clicked="btn7_Clicked"/>
                 </StackLayout>
 
             </Frame>
@@ -111,7 +112,9 @@
                     <StackLayout Orientation="Horizontal">
                         <Label Text="bafoussam" FontSize="Default" FontAttributes="Bold"/>
                         <Label Text="date et heure" HorizontalOptions="EndAndExpand" FontAttributes="Italic" FontSize="Caption"/>
+                        
                     </StackLayout>
+                    <Button x:Name="btn8"  Text="commander" Clicked="btn8_Clicked"/>
                 </StackLayout>
 
             </Frame>
@@ -122,6 +125,7 @@
                         <Label Text="bafoussam" FontSize="Default" FontAttributes="Bold"/>
                         <Label Text="date et heure" HorizontalOptions="EndAndExpand" FontAttributes="Italic" FontSize="Caption"/>
                     </StackLayout>
+                    <Button x:Name="btn9"  Text="commander" Clicked="btn9_Clicked"/>
                 </StackLayout>
 
             </Frame>

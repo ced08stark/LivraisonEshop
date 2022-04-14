@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Livraison.Mobile.CommandPage">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <Label Text="Titre Commande" x:Name="title" HorizontalTextAlignment="Center" FontSize="Default" FontAttributes="Bold"/>
+            <Label Text="client Name" x:Name="name" HorizontalOptions="Center" Margin="10"/>
+            <Label Text="675839955" x:Name="phone" HorizontalOptions="Center" Margin="10"/>
+            <Label Text="675839955" x:Name="reference" HorizontalOptions="Center" Margin="10"/>
+            <Label Text="675839955" x:Name="date" HorizontalOptions="Center" Margin="10"/>
+            <Label Text="675839955" x:Name="lieu" HorizontalOptions="Center" Margin="10"/>
+            <controls:SignaturePadView
+	            x:Name="signatureView"
+	            StrokeWidth="3"
+	            StrokeColor="BlackWhite"
+	            BackgroundColor="Black" />
+            <Button Text="terminer" x:Name="end"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

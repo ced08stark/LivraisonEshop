@@ -12,7 +12,7 @@ namespace Livraison.Mobile
     {
 
         public LivraisonModel CurrentLivraisonModel { get; set; }
-        public LivraisonModel CurrentCommandModel { get; set; }
+        public static CommandeModel CurrentCommandModel { get; set; }
         public MainPage()
         {
             InitializeComponent();
@@ -35,15 +35,15 @@ namespace Livraison.Mobile
         public List<CommandeModel> listCommande = new List<CommandeModel>()
         {
             new CommandeModel("PD01", DateTime.Now.ToLongDateString(), "bafoussam", "tomas", "6599388949"),
-            new CommandeModel("PD02", DateTime.Now.ToLongDateString(), "bafoussam", "tomas", "6599388949"),
-            new CommandeModel("PD03", DateTime.Now.ToLongDateString(), "bafoussam", "tomas", "6599388949"),
-            new CommandeModel("PD04", DateTime.Now.ToLongDateString(), "bafoussam", "tomas", "6599388949"),
-            new CommandeModel("PD05", DateTime.Now.ToLongDateString(), "bafoussam", "tomas", "6599388949"),
-            new CommandeModel("PD06", DateTime.Now.ToLongDateString(), "bafoussam", "tomas", "6599388949"),
+            new CommandeModel("PD02", DateTime.Now.ToLongDateString(), "yaounde", "henris", "6599388949"),
+            new CommandeModel("PD03", DateTime.Now.ToLongDateString(), "douala", "mesmer", "6599388949"),
+            new CommandeModel("PD04", DateTime.Now.ToLongDateString(), "bafoussam", "alexis", "6599388949"),
+            new CommandeModel("PD05", DateTime.Now.ToLongDateString(), "douala", "sanchez", "6599388949"),
+            new CommandeModel("PD06", DateTime.Now.ToLongDateString(), "yaounde", "tomas", "6599388949"),
             new CommandeModel("PD07", DateTime.Now.ToLongDateString(), "bafoussam", "tomas", "6599388949"),
-            new CommandeModel("PD08", DateTime.Now.ToLongDateString(), "bafoussam", "tomas", "6599388949"),
-            new CommandeModel("PD09", DateTime.Now.ToLongDateString(), "bafoussam", "tomas", "6599388949"),
-            new CommandeModel("PD10", DateTime.Now.ToLongDateString(), "bafoussam", "tomas", "6599388949")
+            new CommandeModel("PD08", DateTime.Now.ToLongDateString(), "douala", "tomas", "6599388949"),
+            new CommandeModel("PD09", DateTime.Now.ToLongDateString(), "yaounde", "tomas", "6599388949"),
+            new CommandeModel("PD10", DateTime.Now.ToLongDateString(), "douala", "tomas", "6599388949")
         };
 
 
@@ -56,32 +56,56 @@ namespace Livraison.Mobile
 
         private void btn2_Clicked(object sender, EventArgs e)
         {
-            CurrentLivraisonModel = new LivraisonModel("LV01", DateTime.Now.ToLongDateString(), "Bafoussam");
+            CurrentCommandModel = new CommandeModel("PD02", DateTime.Now.ToLongDateString(), "bafoussam", "tomas", "6599388949");
+            Navigation.PushModalAsync(new CommandPage());
         }
 
         private void btn1_Clicked(object sender, EventArgs e)
         {
-
+            CurrentCommandModel = new CommandeModel("PD01", DateTime.Now.ToLongDateString(), "bafoussam", "tomas", "6599388949");
+            Navigation.PushModalAsync(new CommandPage());
         }
 
         private void btn6_Clicked(object sender, EventArgs e)
         {
-
+            CurrentCommandModel = new CommandeModel("PD06", DateTime.Now.ToLongDateString(), "yaounde", "tomas", "6599388949");
+            Navigation.PushModalAsync(new CommandPage());
         }
 
         private void btn5_Clicked(object sender, EventArgs e)
         {
-
+            CurrentCommandModel = new CommandeModel("PD05", DateTime.Now.ToLongDateString(), "douala", "sanchez", "6599388949");
+            Navigation.PushModalAsync(new CommandPage());
         }
 
         private void btn4_Clicked(object sender, EventArgs e)
         {
-
+            CurrentCommandModel = new CommandeModel("PD04", DateTime.Now.ToLongDateString(), "bafoussam", "alexis", "6599388949");
+            Navigation.PushModalAsync(new CommandPage());
         }
 
         private void btn3_Clicked(object sender, EventArgs e)
         {
+            CurrentCommandModel = new CommandeModel("PD03", DateTime.Now.ToLongDateString(), "douala", "mesmer", "6599388949");
+            Navigation.PushModalAsync(new CommandPage());
+        }
 
+        private void btn9_Clicked(object sender, EventArgs e)
+        {
+            CurrentCommandModel = new CommandeModel("PD09", DateTime.Now.ToLongDateString(), "douala", "mesmer", "6599388949");
+            Navigation.PushModalAsync(new CommandPage());
+        }
+
+        private void btn8_Clicked(object sender, EventArgs e)
+        {
+            CurrentCommandModel = new CommandeModel("PD08", DateTime.Now.ToLongDateString(), "douala", "mesmer", "6599388949");
+            Navigation.PushModalAsync(new CommandPage());
+        }
+
+        private void btn7_Clicked(object sender, EventArgs e)
+        {
+            CurrentCommandModel = new CommandeModel("PD07", DateTime.Now.ToLongDateString(), "douala", "mesmer", "6599388949");
+            Navigation.PushModalAsync(new CommandPage());
         }
     }
 }
