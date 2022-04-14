@@ -12,6 +12,7 @@ namespace Livraison.Mobile
     {
 
         public LivraisonModel CurrentLivraisonModel { get; set; }
+        public LivraisonModel CurrentCommandModel { get; set; }
         public MainPage()
         {
             InitializeComponent();
@@ -19,19 +20,34 @@ namespace Livraison.Mobile
 
         public List<LivraisonModel> listLivraison = new List<LivraisonModel>()
         {
-            new LivraisonModel("LV01", DateTime.Now.ToLongDateString(), "Libreville"),
-            new LivraisonModel("LV02", DateTime.Now.ToLongDateString(), "Libreville"),
-            new LivraisonModel("LV03", DateTime.Now.ToLongDateString(), "Libreville"),
-            new LivraisonModel("LV04", DateTime.Now.ToLongDateString(), "Libreville"),
-            new LivraisonModel("LV05", DateTime.Now.ToLongDateString(), "Libreville"),
-            new LivraisonModel("LV06", DateTime.Now.ToLongDateString(), "Libreville"),
-            new LivraisonModel("LV07", DateTime.Now.ToLongDateString(), "Libreville"),
-            new LivraisonModel("LV08", DateTime.Now.ToLongDateString(), "Libreville"),
-            new LivraisonModel("LV09", DateTime.Now.ToLongDateString(), "Libreville"),
-            new LivraisonModel("LV010", DateTime.Now.ToLongDateString(), "Libreville")
+            new LivraisonModel("PD01", DateTime.Now.ToLongDateString(), "bafoussam"),
+            new LivraisonModel("PD02", DateTime.Now.ToLongDateString(), "yaounde"),
+            new LivraisonModel("PD03", DateTime.Now.ToLongDateString(), "douala"),
+            new LivraisonModel("PD04", DateTime.Now.ToLongDateString(), "Libreville"),
+            new LivraisonModel("PD05", DateTime.Now.ToLongDateString(), "Libreville"),
+            new LivraisonModel("PD06", DateTime.Now.ToLongDateString(), "Libreville"),
+            new LivraisonModel("PD07", DateTime.Now.ToLongDateString(), "Libreville"),
+            new LivraisonModel("PD08", DateTime.Now.ToLongDateString(), "Libreville"),
+            new LivraisonModel("PD09", DateTime.Now.ToLongDateString(), "Libreville"),
+            new LivraisonModel("PD10", DateTime.Now.ToLongDateString(), "Libreville")
         };
 
-       
+        public List<CommandeModel> listCommande = new List<CommandeModel>()
+        {
+            new CommandeModel("PD01", DateTime.Now.ToLongDateString(), "bafoussam", "tomas", "6599388949"),
+            new CommandeModel("PD02", DateTime.Now.ToLongDateString(), "bafoussam", "tomas", "6599388949"),
+            new CommandeModel("PD03", DateTime.Now.ToLongDateString(), "bafoussam", "tomas", "6599388949"),
+            new CommandeModel("PD04", DateTime.Now.ToLongDateString(), "bafoussam", "tomas", "6599388949"),
+            new CommandeModel("PD05", DateTime.Now.ToLongDateString(), "bafoussam", "tomas", "6599388949"),
+            new CommandeModel("PD06", DateTime.Now.ToLongDateString(), "bafoussam", "tomas", "6599388949"),
+            new CommandeModel("PD07", DateTime.Now.ToLongDateString(), "bafoussam", "tomas", "6599388949"),
+            new CommandeModel("PD08", DateTime.Now.ToLongDateString(), "bafoussam", "tomas", "6599388949"),
+            new CommandeModel("PD09", DateTime.Now.ToLongDateString(), "bafoussam", "tomas", "6599388949"),
+            new CommandeModel("PD10", DateTime.Now.ToLongDateString(), "bafoussam", "tomas", "6599388949")
+        };
+
+
+
 
         private void Button_Clicked(object sender, EventArgs e)
         {
@@ -40,7 +56,7 @@ namespace Livraison.Mobile
 
         private void btn2_Clicked(object sender, EventArgs e)
         {
-            CurrentLivraisonModel = 
+            CurrentLivraisonModel = new LivraisonModel("LV01", DateTime.Now.ToLongDateString(), "Bafoussam");
         }
 
         private void btn1_Clicked(object sender, EventArgs e)
